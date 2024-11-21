@@ -1,0 +1,38 @@
+To seed the database with records, run this commands;
+
+-- php artisan db:seed --class=ServiceSeeder     
+-- php artisan db:seed --class=AirtimeDataBundleSeeder     
+
+
+Method: POST
+Url: /api/register
+Payload: {
+    "name": "Samuel Erube",
+    "email": "ss@yahoo.com",
+    "password" : "sa@12345678"
+}
+
+Method: POST
+Url: /api/login
+Payload: {
+    "email": "ss@yahoo.com",
+    "password" : "sa@12345678"
+}
+
+METHOD: GET
+Url: /api/services
+
+METHOD: GET
+Url: /api/transactions
+
+METHOD: GET
+Url: /services/{serviceId}/bundles
+
+
+METHOD: POST
+Url: /api/transactions
+Payload: {
+    "bundle_id": 1
+}
+
+
